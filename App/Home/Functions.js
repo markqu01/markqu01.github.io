@@ -246,7 +246,7 @@ function previewTransactions(args) {
                             if ((ImportZeroTrxFlag == 'N') && (rangeRAW.values[i][AmtCol - 1] == 0)) {
                                 // skip zero transactions
                             } else { 
-                            importResultsTable.rows.add(null, [[rangeRAW.values[i][PayeeCol - 1], rangeRAW.values[i][DateCol - 1], ruleRow.values[0][7], "Expense", rangeRAW.values[i][AmtCol - 1] * ReverseAmt, ruleRow.values[0][5], "", "Imported!"]]);
+                            importResultsTable.rows.add(null, [[rangeRAW.values[i][PayeeCol - 1], rangeRAW.values[i][DateCol - 1], ruleRow.values[0][7], "Expense", rangeRAW.values[i][AmtCol - 1] * ReverseAmt, ruleRow.values[0][5], "", "", "Imported!"]]);
                             }
                         }
                         logEntry(ctx, 'Preview', 'Processed and added each row of import data to Preview Results table.');
